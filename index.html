@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teleperformance contest</title>
+    <link rel="stylesheet" href="./stilye.css">
+</head>
+<body>
+    <section class="form-register" >
+    <h1>  Formulario De Inscription. </h1>
+    <div>
+        <form id="SaveInscription">
+        <div  > 
+            <label for="Activity"> Activity * </label>
+            <select class="controls" name="Activity" id="Activity" required>
+                <option value=""></option>
+                <option value="mentalExercises">MENTAL EXERCISES</option>
+                <option value="PhysicalEctivities">PHYSICAL ECTIVITIES</option>
+                <option value="groupActivities">GROUP ACTIVITIES</option>
+            </select>
+            <p class="MensajeError" ></p>
+        </div>
+        <br>
+        <div  >
+            <label for="ImployeeId">  Id  *</label> 
+            <input class="controls" minlength="4" maxlength="20" id="ImployeeId" placeholder="id del empleado" required pattern="[0-9]+" >
+            <p class="MensajeError" ></p>
+        </div> 
+        <br>
+        <div > 
+            <label for="ImployeeName">  Name *</label>
+            <input  class="controls" type="text" id="ImployeeName" placeholder="Nombre del empleado" required pattern="[a-zA-Z ]+">
+            <p class="MensajeError"></p>
+        </div>
+        <br>
+        <div >
+            <label for="EmployeeIdentification">  Identification  *</label> 
+            <input class="controls"  id="EmployeeIdentification" placeholder="identificacion del empleado" required pattern="[0-9]+" >
+            <p class="MensajeError"></p>
+        </div>
+        <br>
+        <div  >
+            <label for="EmployeeCity">  City  *</label>
+            <select class="controls" name="Employeecity" id="EmployeeCity" required>
+                <option value=""></option>
+                 <option value="">MEDELLIN</option>
+                 <option value="">BOGOTA</option>
+                </select>
+                <p class="MensajeError"></p>
+        </div>
+     <br>
+        <div >
+            <label for="EmployeeSex">  Sex  * </label> 
+            <select  class="controls" name="EmployeeSex" id="EmployeeSex" required>
+                <OPtion></OPtion>
+                <option value="Masculino">MASCULINO</option>
+                <option value="Femenino">FEMENINO</option>
+            </select>
+            <p class="MensajeError" ></p>
+     </div>
+     <br>
+     <div  > 
+        <label for="EmployeAge">Age  *</label> 
+        <input class="controls" minlength="1" max="3" type="text" id="EmployeAge" placeholder="Edad del empleado" required pattern="[0-9]+">
+        <p class="MensajeError"></p>
+     </div>
+     <br>
+     <div>
+     <label for="DateInscription">Registration date *</label>
+     <input class="controls" type="date" id="DateInscription" placeholder="Fecha en que realizo el registro" required >
+     <p class="MensajeError"></p>
+    </div>
+     <br>
+     <div> <button onclick= "" class = "Button" >Save Inscription</button></div>
+
+    </form>
+ </div>
+</section>
+
+ <div><footer> JOEL ANDRES URIELES AVENDAÑO </footer></div>
+
+ <script src="./script.js" ></script>
+
+  
+</body>
+</html>
